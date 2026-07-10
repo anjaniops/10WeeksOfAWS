@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::245013469626:role/github-oidc-challenge-role
+          role-to-assume: arn:aws:iam::245013469626:role/github-oidc-challenge-role-1
           aws-region: ap-south-1
       - run: aws sts get-caller-identity
       - run: aws s3 ls
